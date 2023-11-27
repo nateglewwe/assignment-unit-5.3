@@ -1,12 +1,41 @@
 console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
+let myCollection = [];
 
+function addToCollection (collection, title, artist, yearPublished) {
+let album = {
+  title: title,
+  artist: artist,
+  yearPublished: yearPublished
+  }
+  myCollection.push (album);
+  return album;
+}
+console.log(addToCollection('myCollection', 'Endless Forms Most Beautiful', 'Nightwish', 2015));
+console.log(addToCollection('myCollection', 'Imaginaerum', 'Nightwish', 2011));
+console.log(addToCollection('myCollection', 'Twist is the New Twerk', 'Postmodern Jukebox', 2014));
+console.log(addToCollection('myCollection', 'Historical Misappropriation', 'Postmodern Jukebox', 2014));
+console.log(addToCollection('myCollection', 'Sing It All Away', 'Walk Off the Earth', 2015));
+console.log(addToCollection('myCollection', 'Here We Go!', 'Walk Off the Earth', 2019));
+console.log(myCollection);
 
+function showCollection (collection) {
+for (album of collection) {
+  console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);  
+  }
+}
+console.log(showCollection(myCollection));
 
-
-
-
-
+function findByArtist (collection, artist) {
+let results = [];
+for (album of collection) {
+  if (artist === album.artist) {
+    results.push(album);  
+    }
+  }
+  return results;
+}
+console.log(findByArtist(myCollection, Nightwish));
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
