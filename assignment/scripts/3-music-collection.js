@@ -11,6 +11,8 @@ let album = {
   myCollection.push (album);
   return album;
 }
+console.log(myCollection);
+
 console.log(addToCollection('myCollection', 'Endless Forms Most Beautiful', 'Nightwish', 2015));
 console.log(addToCollection('myCollection', 'Imaginaerum', 'Nightwish', 2011));
 console.log(addToCollection('myCollection', 'Twist is the New Twerk', 'Postmodern Jukebox', 2014));
@@ -35,7 +37,9 @@ for (album of collection) {
   }
   return results;
 }
-console.log(findByArtist(myCollection, Nightwish));
+console.log(findByArtist(myCollection, 'Nightwish')); //testing with artist in myCollection
+console.log(findByArtist(myCollection, 'Billy Joel')); //testing with artist not in myCollection
+
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
