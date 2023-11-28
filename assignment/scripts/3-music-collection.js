@@ -8,17 +8,17 @@ let album = {
   artist: artist,
   yearPublished: yearPublished
   }
-  myCollection.push (album);
+  collection.push (album);
   return album;
 }
-console.log(myCollection);
+console.log('array before adding', myCollection);
 
-console.log(addToCollection('myCollection', 'Endless Forms Most Beautiful', 'Nightwish', 2015));
-console.log(addToCollection('myCollection', 'Imaginaerum', 'Nightwish', 2011));
-console.log(addToCollection('myCollection', 'Twist is the New Twerk', 'Postmodern Jukebox', 2014));
-console.log(addToCollection('myCollection', 'Historical Misappropriation', 'Postmodern Jukebox', 2014));
-console.log(addToCollection('myCollection', 'Sing It All Away', 'Walk Off the Earth', 2015));
-console.log(addToCollection('myCollection', 'Here We Go!', 'Walk Off the Earth', 2019));
+console.log(addToCollection(myCollection, 'Endless Forms Most Beautiful', 'Nightwish', 2015));
+console.log(addToCollection(myCollection, 'Imaginaerum', 'Nightwish', 2011));
+console.log(addToCollection(myCollection, 'Twist is the New Twerk', 'Postmodern Jukebox', 2014));
+console.log(addToCollection(myCollection, 'Historical Misappropriation', 'Postmodern Jukebox', 2014));
+console.log(addToCollection(myCollection, 'Sing It All Away', 'Walk Off the Earth', 2015));
+console.log(addToCollection(myCollection, 'Here We Go!', 'Walk Off the Earth', 2019));
 console.log(myCollection);
 
 function showCollection (collection) {
